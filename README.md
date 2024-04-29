@@ -1,27 +1,51 @@
-# AssessmentProject
+# Angular User Quiz App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+## Table of contents
 
-## Development server
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Features](#features)
+- [Additional Notes](#additional-notes)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+This Angular application showcases search, data fetching, pagination, and basic caching techniques. It fetches user data from external APIs and presents it in an interactive user interface.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+-   Angular
+-   RxJS
+-   Preline UI
+-   LocalStorage (for simple caching)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation and Setup
 
-## Running unit tests
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/dew-dr0p/angular-quiz-assessment.git
+    ```
+2. **Install dependencies:**
+    ```bash
+    cd angular-quiz-assessment
+    npm install
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Run the Application**
+    ```bash
+    ng serve
+    ```
 
-## Running end-to-end tests
+## Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+-   Displays a paginated list of users fetched from an external API.
+-   Implements a search bar to filter users by ID.
+-   Navigates to individual user details pages.
+-   Utilizes localStorage caching to optimize loading times.
 
-## Further help
+## Additional Notes
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-  This project is a demonstration of core Angular concepts.
+-   Future enhancements could include:
+    -   Implementing more robust state management (NgRx)
+    -   Adding user profile editing capabilities
